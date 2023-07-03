@@ -1,0 +1,14 @@
+.button {
+  width: 25%;
+  height: 75px;
+  font-size: 45px;
+  border: 1px solid black;
+}
+
+.zero {
+  width: 50%;
+}
+
+.operator {
+  background-color: orange;
+}

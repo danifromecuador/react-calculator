@@ -1,0 +1,9 @@
+.display {
+  height: 75px;
+  font-size: 65px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: gray;
+  color: white;
+}
