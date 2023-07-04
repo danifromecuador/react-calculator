@@ -2,30 +2,34 @@ import React from 'react';
 import Display from './Display';
 import Button from './Button';
 import '../style/Calculator.css';
+// import calculate from '../logic/calculate';
 
-const Calculator = () => (
-  <div className="calculator-main-container">
-    <Display />
-    <Button character="AC" />
-    <Button character="+/-" />
-    <Button character="%" />
-    <Button character="÷" otherClass="operator" />
-    <Button character="7" />
-    <Button character="8" />
-    <Button character="9" />
-    <Button character="x" otherClass="operator" />
-    <Button character="4" />
-    <Button character="5" />
-    <Button character="6" />
-    <Button character="-" otherClass="operator" />
-    <Button character="1" />
-    <Button character="2" />
-    <Button character="3" />
-    <Button character="+" otherClass="operator" />
-    <Button character="0" otherClass="zero" />
-    <Button character="·" />
-    <Button character="=" />
-  </div>
-);
+const Calculator = () => {
+  const value = 32.2;
+  return (
+    <div className="calculator-main-container">
+      <Display total={value} />
+      <Button buttonName="AC" />
+      <Button buttonName="+/-" />
+      <Button buttonName="%" />
+      <Button buttonName="÷" otherClass="operator" />
+      <Button buttonName="7" />
+      <Button buttonName="8" />
+      <Button buttonName="9" />
+      <Button buttonName="x" otherClass="operator" />
+      <Button buttonName="4" />
+      <Button buttonName="5" />
+      <Button buttonName="6" />
+      <Button buttonName="-" otherClass="operator" />
+      <Button buttonName="1" />
+      <Button buttonName="2" />
+      <Button buttonName="3" />
+      <Button buttonName="+" otherClass="operator" />
+      <Button buttonName="0" otherClass="zero" />
+      <Button buttonName="·" />
+      <Button buttonName="=" />
+    </div>
+  );
+};
 
 export default Calculator;

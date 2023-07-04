@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../style/Button.css';
 
-const Button = ({ character, otherClass }) => (
+const Button = ({ buttonName, otherClass }) => (
   <button type="button" className={`button + ${otherClass}`}>
-    {character}
+    {buttonName}
   </button>
 );
 
 Button.propTypes = {
-  character: PropTypes.string.isRequired,
+  buttonName: PropTypes.string.isRequired,
   otherClass: PropTypes.string,
 };
 
