@@ -5,11 +5,14 @@ import '../style/Calculator.css';
 // import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const value = 32.2;
+  const value = '32.2';
+  const handleClick = () => {
+    console.log('AC button was clicked');
+  };
   return (
     <div className="calculator-main-container">
-      <Display total={value} />
-      <Button buttonName="AC" />
+      <Display value={value} />
+      <Button buttonName="AC" handleClick={handleClick} />
       <Button buttonName="+/-" />
       <Button buttonName="%" />
       <Button buttonName="÷" otherClass="operator" />
