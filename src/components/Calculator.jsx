@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Display from './Display';
 import Button from './Button';
 import '../style/Calculator.css';
-// import calculate from '../logic/calculate';
+// import '../logic/calculate';
 
 const Calculator = () => {
-  const value = '32.2';
-  const handleClick = () => {
+  const [obj, setObj] = useState({
+    total: '0',
+    next: null,
+    operation: null,
+  });
+
+  const handleClickAC = () => {
     console.log('AC button was clicked');
+    setObj({ total: '22' });
   };
   return (
     <div className="calculator-main-container">
-      <Display value={value} />
-      <Button buttonName="AC" handleClick={handleClick} />
+      <Display value={obj.total} />
+      <Button buttonName="AC" handleClick={handleClickAC} />
       <Button buttonName="+/-" />
       <Button buttonName="%" />
       <Button buttonName="÷" otherClass="operator" />
