@@ -9,9 +9,12 @@ function Calculator() {
   function handleClick(buttonName) {
     setObj(calculate(obj, buttonName));
   }
+  if (!obj.total) obj.total = '';
+  if (!obj.operation) obj.operation = '';
+  if (!obj.next) obj.next = '';
   return (
     <div className="calculator-main-container">
-      <Display value={obj.total || obj.next || '0'} />
+      <Display value={obj.total + obj.operation + obj.next || '0'} />
       <Button buttonName="AC" handleClick={() => handleClick('AC')} />
       <Button buttonName="+/-" handleClick={() => handleClick('+/-')} />
       <Button buttonName="%" handleClick={() => handleClick('%')} />
