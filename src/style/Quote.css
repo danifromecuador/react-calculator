@@ -1,3 +1,7 @@
 .quote-container {
   font-family: 'Courier New', Courier, monospace;
+  border: 1px solid black;
+  width: 498px;
+  margin: 0 auto;
+  padding: 5px;
 }
