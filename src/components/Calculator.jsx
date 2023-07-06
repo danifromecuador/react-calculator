@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Display from './Display';
 import Button from './Button';
+import Quote from './Quote';
 import '../style/Calculator.css';
 import calculate from '../logic/calculate';
 
@@ -11,6 +12,7 @@ function Calculator() {
   }
   return (
     <div className="calculator-main-container">
+      <Quote />
       <Display value={obj.total || obj.next || '0'} />
       <Button buttonName="AC" handleClick={() => handleClick('AC')} />
       <Button buttonName="+/-" handleClick={() => handleClick('+/-')} />
