@@ -4,12 +4,6 @@ import Button from './Button';
 import '../style/Calculator.css';
 import calculate from '../logic/calculate';
 
-// let obj = {};
-// function handleClick(event) {
-//   obj = calculate(obj, event.target.name);
-//   console.log(obj);
-// }
-
 function Calculator() {
   const [obj, setObj] = useState({});
   function handleClick(buttonName) {
