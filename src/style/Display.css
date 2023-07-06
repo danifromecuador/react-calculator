@@ -1,6 +1,7 @@
 .display {
   height: 75px;
   font-size: 65px;
+  padding: 0 22px;
   display: flex;
   justify-content: right;
   align-items: center;

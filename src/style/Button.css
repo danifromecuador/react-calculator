@@ -5,10 +5,27 @@
   border: 1px solid black;
 }
 
+.button:hover {
+  background-color: #c7c7c7;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: gray;
+}
+
 .zero {
   width: 50%;
 }
 
 .operator {
-  background-color: orange;
+  background-color: #ffa500;
+}
+
+.operator:hover {
+  background-color: #f60;
+}
+
+.operator:active {
+  background-color: red;
 }
