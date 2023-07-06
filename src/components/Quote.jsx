@@ -8,6 +8,7 @@ export default function Quote() {
     try {
       const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=happiness', {
         headers: { 'X-Api-Key': 'nezpEokeOVTwP1C5NwtGEQ==h62LjJXfJNexoQfy' },
+        method: 'GET',
       });
       const data = await response.json();
       setQuote(data[0].quote);
