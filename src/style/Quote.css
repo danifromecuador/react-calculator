@@ -1,7 +1,10 @@
 .quote-container {
   font-family: 'Courier New', Courier, monospace;
-  border: 1px solid black;
-  width: 498px;
+  font-size: 32px;
+  width: 75%;
+  height: 70vh;
   margin: 0 auto;
   padding: 5px;
+  display: flex;
+  align-items: center;
 }

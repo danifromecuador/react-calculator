@@ -1,0 +1,28 @@
+.navbar-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.Navbar.ul {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5%;
+}
+
+.li {
+  list-style: none;
+  font-size: 32px;
+  color: blue;
+}
+
+br {
+  background-color: red;
+}
