@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Display from './Display';
-import Button from './Button';
+import Display from '../components/Display';
+import Button from '../components/Button';
 import '../style/Calculator.css';
 import calculate from '../logic/calculate';
 

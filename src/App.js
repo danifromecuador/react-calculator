@@ -1,14 +1,24 @@
 import React from 'react';
+import {
+  BrowserRouter, Routes, Route,
+} from 'react-router-dom';
 import './App.css';
-import Calculator from './components/Calculator';
-import Quote from './components/Quote';
+import Calculator from './pages/Calculator';
+import Quote from './pages/Quote';
+import Home from './pages/Home';
+import Navbar from './components/Navbar';
 
 const App = () => (
-  <div className="App">
-    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet" />
-    <Calculator />
-    <Quote />
-  </div>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Navbar />}>
+        <Route index element={<Home />} />
+        <Route path="calculator" element={<Calculator />} />
+        <Route path="quotes" element={<Quote />} />
+      </Route>
+    </Routes>
+
+  </BrowserRouter>
 );
 
 export default App;

@@ -4,3 +4,8 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+.App {
+  font-family: 'Seven Segment', sans-serif;
+  text-align: center;
+}
